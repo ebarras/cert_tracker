@@ -64,10 +64,12 @@ DJANGO_APPS = [
 ]
 THIRD_PARTY_APPS = [
     'crispy_forms',
+    'rest_framework',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'rest_framework',
+    # ... include the providers you want to enable:
+    'allauth.socialaccount.providers.google',
 ]
 LOCAL_APPS = [
     'cert_tracker.users.apps.UsersAppConfig',
