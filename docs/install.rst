@@ -6,7 +6,7 @@ This is where you write how to get a new laptop to run this project.
 Windows
 """""""""""""""""
 
-| `git clone https://github.com/ebarras/cert_tracker.git`
+| git clone ``https://github.com/ebarras/cert_tracker.git``
 | cd cert_tracker
 | virtualenv.exe venv
 | .\venv\Scripts\activate
