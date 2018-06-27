@@ -96,21 +96,34 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  padding-top: 5rem;
+}
 
+body h1 {
+  padding-left: 10px;
+}
 
+body p {
+  padding-left: 10px;
+}
 
+tr .btn {
+  line-height: .55;
+}
 
+.row-header-buttons{
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
 
+.alert {
+  padding-bottom: 0px;
+}
 
-
-
-
-
-
-
-
-
-
+td form {
+  display: inline;
+}
 
 
 /* ==========================================================================
