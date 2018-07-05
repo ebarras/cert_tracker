@@ -121,6 +121,12 @@ tr .btn {
   padding-bottom: 0px;
 }
 
+/* This filter lets you apply styles to the datatables search field. */
+/*.dataTables_filter {
+   float: left !important;
+   margin-top: 5px;
+}*/
+
 
 /* ==========================================================================
    Helper classes
