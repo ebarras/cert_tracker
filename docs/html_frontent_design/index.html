@@ -20,6 +20,11 @@
   <!-- Datatables CSS -->
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 
+  <!-- Tempus Dominus (datetime picker) CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Local CSS -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -73,15 +78,33 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
+
                 <div class="modal-body">
                   <div class="form-group">
                     <label for="url">URL</label>
-                    <input id="url" class="form-control" type="text" name="url_field" placeholder="www.google.com">
+                    <input id="url" class="form-control" type="text" name="url_field" placeholder="www.google.com" />
                   </div>
+
                   <div class="form-group">
-                    <label for="agency">Agency</label>
-                    <input id="agency" class="form-control" type="text" name="agency_field" placeholder="FSA">
+                    <label for="agreement">Agreement</label>
+                    <select class="form-control" id="agreement" name="agreement_field">
+                      <option selected>TTT0909</option>
+                      <option>TSX9385</option>
+                      <option>LTR1122</option>
+                      <option>DSL9384</option>
+                    </select>
                   </div>
+
+                  <div class="form-group">
+                    <label for="expiration_date">Expiration Date</label>
+                    <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                      <input type="text" id="expiration_date" class="form-control datetimepicker-input" data-target="#datetimepicker1" />
+                        <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                          <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                        </div>
+                    </div>
+                  </div>
+
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -341,7 +364,14 @@
       } );
       $('#home-certs-table').show(); //The table is hidden when the page is built, then shown after all the content is formatted.
     } );
+      $(function() {
+        $('#datetimepicker1').datetimepicker();
+      });
   </script>
+
+  <!-- Tempus Dominus (datetime picker) JS -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
 </body>
 
 </html>
